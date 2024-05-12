@@ -1,28 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FEU Announcement</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokémon Data Form</title>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .fire {
+        background-color: #FF7F0F;
+        color: white;
+    }
+
+    .water {
+        background-color: #6890F0;
+        color: white;
+    }
+
+    .grass {
+        background-color: #78C850;
+        color: white;
+    }
+
+    .bug {
+        background-color: #A8B820;
+        color: white;
+    }
+
+    .normal {
+        background-color: #A8A878;
+        color: white;
+    }
+
+    .electric {
+        background-color: #F8D030;
+        color: white;
+    }
+
+    .poison {
+        background-color: #A040A0;
+        color: white;
+    }
+
+    .ground {
+        background-color: #E0C068;
+        color: white;
+    }
+
+    .fairy {
+        background-color: #EE99AC;
+        color: white;
+    }
+
+    .flying {
+        background-color: #A890F0;
+        color: white;
+    }
+</style>
 </head>
-<body style="background-image: url('FEU BACKROUND.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-    <div style="text-align: center; padding: 50px;">
-        <img src="FEU LOGO.png" alt="FEU Logo" style="width: auto; height: 150px;">
-        <h1 style="color: white; font-size: 30px; margin-top: 20px;">Far Eastern University</h1>
-        <h2 style="color: white; font-size: 20px; margin-bottom: 30px;">Class Suspension Announcement</h2>
-        <p style="color: white; font-size: 16px; line-height: 1.5;">
-            Dear Far Eastern University Community,
-        </p>
-        <p style="color: white; font-size: 16px; line-height: 1.5;">
-            In light of the recent weather forecast indicating a significant rise in the heat index, we have made the decision to suspend all classes and academic activities on May 10, 2024. The safety and well-being of our students, faculty, and staff remain our utmost priority, and this precautionary measure aims to ensure everyone's health and comfort during this period of extreme weather conditions.
-        </p>
-        <p style="color: white; font-size: 16px; line-height: 1.5;">
-            While we understand the importance of maintaining the academic calendar, we believe that this temporary suspension is necessary to mitigate the risks associated with prolonged exposure to high temperatures. We encourage everyone to stay hydrated, avoid unnecessary outdoor activities, and take necessary precautions to prevent heat-related illnesses. Additionally, please monitor official university channels for any further updates or announcements regarding class schedules and campus operations.
-        </p>
-        <p style="color: white; font-size: 16px; line-height: 1.5;">
-            We appreciate your understanding and cooperation during this time. Let us all prioritize our health and safety as we navigate through this heatwave together. Stay cool, stay safe, and we look forward to welcoming you back to campus under more favorable weather conditions.
-        </p>
-    </div>
+<body>
+
+<h2>Pokémon Data Form</h2>
+
+<form action="#">
+    <label for="nationalDex">National Dex:</label><br>
+    <input type="number" id="nationalDex" name="nationalDex" min="0"><br><br>
+
+    <label for="pokemonName">Pokemon Name:</label><br>
+    <input type="text" id="pokemonName" name="pokemonName"><br><br>
+
+    <label>Generation:</label><br>
+    <input type="radio" id="gen1" name="generation" value="1">
+    <label for="gen1">I</label><br>
+    <input type="radio" id="gen2" name="generation" value="2">
+    <label for="gen2">II</label><br>
+    <input type="radio" id="gen3" name="generation" value="3">
+    <label for="gen3">III</label><br><br>
+
+    <label for="image">Image:</label><br>
+    <input type="file" id="image" name="image"><br><br>
+
+    <label for="type1">Type 1:</label><br>
+    <select id="type1" name="type1">
+        <option value="fire" class="fire">Fire</option>
+        <option value="water" class="water">Water</option>
+        <option value="grass" class="grass">Grass</option>
+        <option value="bug" class="bug">Bug</option>
+        <option value="normal" class="normal">Normal</option>
+        <option value="electric" class="electric">Electric</option>
+        <option value="poison" class="poison">Poison</option>
+        <option value="ground" class="ground">Ground</option>
+        <option value="fairy" class="fairy">Fairy</option>
+        <option value="flying" class="flying">Flying</option>
+    </select><br><br>
+
+    <label for="type2">Type 2:</label><br>
+    <select id="type2" name="type2">
+        <option value="" selected>Select Type</option>
+        <option value="fire" class="fire">Fire</option>
+        <option value="water" class="water">Water</option>
+        <option value="grass" class="grass">Grass</option>
+        <option value="bug" class="bug">Bug</option>
+        <option value="normal" class="normal">Normal</option>
+        <option value="electric" class="electric">Electric</option>
+        <option value="poison" class="poison">Poison</option>
+        <option value="ground" class="ground">Ground</option>
+        <option value="fairy" class="fairy">Fairy</option>
+        <option value="flying" class="flying">Flying</option>
+    </select><br><br>
+
+    <label for="evolvesFrom">Evolves From:</label><br>
+    <input type="text" id="evolvesFrom" name="evolvesFrom"><br><br>
+
+    <label for="evolvesTo">Evolves To:</label><br>
+    <input type="text" id="evolvesTo" name="evolvesTo"><br><br>
+
+    <label for="nickname">Nickname:</label><br>
+    <input type="text" id="nickname" name="nickname"><br><br>
+
+    <label for="birthday">Birthday:</label><br>
+    <input type="date" id="birthday" name="birthday"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<h2>Pokémon Data Table</h2>
+
+<table>
+  <tr>
+    <th>National Dex</th>
+    <th>Pokemon Name</th>
+    <th>Generation</th>
+    <th>Image</th>
+    <th>Type</th>
+    <th>Evolves From</th>
+    <th>Evolves To</th>
+    <th>Nickname</th>
+    <th>Birthday</th>
+  </tr>
+  <tr>
+    <td>001</td>
+    <td>Bulbasaur</td>
+    <td>Gen I</td>
+    <td><img src="https://cdn.bulbagarden.net/upload/2/21/001Bulbasaur.png" alt="Bulbasaur"></td>
+    <td class="grass">Grass/Poison</td>
+    <td>-</td>
+    <td>Ivysaur</td>
+    <td>Bulby</td>
+    <td>1996-02-27</td>
+  </tr>
+  <!-- Add more rows for other Pokémon -->
+</table>
+
 </body>
 </html>
+
 
