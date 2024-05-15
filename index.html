@@ -28,26 +28,14 @@
 
 <form>
     <label for="nationalDex">National Dex:</label>
-    <input type="number" id="nationalDex" name="nationalDex" min="0"><br><br>
+    <input type="number" id="nationalDex" name="nationalDex" min="0" value="004"><br><br>
 
     <label for="pokemonName">Pokemon Name:</label>
-    <input type="text" id="pokemonName" name="pokemonName"><br><br>
+    <input type="text" id="pokemonName" name="pokemonName" value="Charmander"><br><br>
 
     <label for="generation">Generation:</label><br>
-    <input type="radio" id="gen1" name="generation" value="1">
+    <input type="radio" id="gen1" name="generation" value="1" checked>
     <label for="gen1">Gen I</label><br>
-    <input type="radio" id="gen2" name="generation" value="2">
-    <label for="gen2">Gen II</label><br>
-    <input type="radio" id="gen3" name="generation" value="3">
-    <label for="gen3">Gen III</label><br>
-    <input type="radio" id="gen4" name="generation" value="4">
-    <label for="gen4">Gen IV</label><br>
-    <input type="radio" id="gen5" name="generation" value="5">
-    <label for="gen5">Gen V</label><br>
-    <input type="radio" id="gen6" name="generation" value="6">
-    <label for="gen6">Gen VI</label><br>
-    <input type="radio" id="gen7" name="generation" value="7">
-    <label for="gen7">Gen VII</label><br>
     <br>
 
     <label for="image">Image:</label>
@@ -55,25 +43,23 @@
 
     <label for="type1">Type 1:</label>
     <select id="type1" name="type1">
-        <option value="Normal">Normal</option>
-        <option value="Fire">Fire</option>
-        <option value="Water">Water</option>
-        <option value="Electric">Electric</option>
+        <option value="fire">Fire</option>
+        <option value="water">Water</option>
+        <!-- Add more options for other types -->
     </select><br><br>
 
     <label for="type2">Type 2:</label>
     <select id="type2" name="type2">
-        <option value="None">None</option>
-        <option value="Grass">Grass</option>
-        <option value="Fighting">Fighting</option>
-        <option value="Psychic">Psychic</option>
+        <option value="">None</option>
+        <option value="flying">Flying</option>
+        <!-- Add more options for other types -->
     </select><br><br>
 
     <label for="evolvesFrom">Evolves From:</label>
     <input type="text" id="evolvesFrom" name="evolvesFrom"><br><br>
 
     <label for="evolvesTo">Evolves To:</label>
-    <input type="text" id="evolvesTo" name="evolvesTo"><br><br>
+    <input type="text" id="evolvesTo" name="evolvesTo" value="Charmeleon"><br><br>
 
     <label for="nickname">Nickname:</label>
     <input type="text" id="nickname" name="nickname"><br><br>
@@ -99,223 +85,16 @@
         <th>Birthday</th>
     </tr>
     <tr>
-        <td>001</td>
-        <td>Gen Z</td>
-        <td>Jebson</td>
-        <td><img src="https://mail.google.com/mail/u/3?ui=2&ik=6b39bdbfcb&attid=0.1&permmsgid=msg-f:1798573416478355367&th=18f5d0fe37a72fa7&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ-u4f5PuKsSFnpJju0YnyosQSKZcatfn02wp1j2AQadVIribrb4bU3Yd-M72xaNRDngPLYsdBFuLGtTuUPAdSNQLij4XETN045YTcyeNuCR2JC_bfDeBITKBVI&disp=emb&realattid=ii_lvz5i1x10" alt="Jebson"></td>
-        <td style="background-color: #78C850; color: white;">Classic/Normal</td>
-        <td>None</td>
-        <td>Thomas</td>
-        <td>Jeboy</td>
-        <td>2004-09-17</td>
-    </tr>
-    <tr>
-        <td>025</td>
+        <td>004</td>
         <td>Gen I</td>
-        <td>Pikachu</td>
-        <td><img src="https://archives.bulbagarden.net/media/upload/thumb/4/4a/0025Pikachu.png/250px-0025Pikachu.png" alt="Pikachu"></td>
-        <td style="background-color: #F8D030; color: white;">Electric</td>
-        <td>Pichu</td>
-        <td>Raichu</td>
-        <td>Pika</td>
-        <td>1996-02-27</td>
+        <td>Charmander</td>
+        <td><img src="https://archives.bulbagarden.net/media/upload/thumb/7/73/004Charmander.png/250px-004Charmander.png" alt="Charmander"></td>
+        <td>Fire</td>
+        <td>-</td>
+        <td>Charmeleon</td>
+        <td></td>
+        <td></td>
     </tr>
-    </tr>
-    <td>035</td>
-    <td>Gen I</td>
-    <td>Clefairy</td>
-    <td><img src="https://archives.bulbagarden.net/media/upload/thumb/b/b7/0035Clefairy.png/250px-0035Clefairy.png" alt="Clefairy"></td>
-    <td style="background-color: #FFC0CB; color: white;">Fairy</td>
-    <td>None</td>
-    <td>Clefable</td>
-    <td>Moonrock</td>
-    <td>1996-03-01</td>
-    <tr>
-    </tr>
-     <td>0063</td>
-    <td>Gen I</td>
-    <td>Abra</td>
-    <td><img src="https://archives.bulbagarden.net/media/upload/thumb/b/bd/0063Abra.png/250px-0063Abra.png" alt="Abra"></td>
-    <td style="background-color: #F08030; color: white;">Psychic</td>
-    <td>None</td>
-    <td>Alakazam</td>
-    <td>Kadabra</td>
-    <td>1996-03-01</td>
-    </tr>
-    <td>152</td>
-    <td>Gen II</td>
-    <td>Chikorita</td>
-     <td><img src="https://archives.bulbagarden.net/media/upload/b/bc/0152Chikorita.png" alt="Chikorita"></td>
-     <td style="background-color: #78C850; color: white;">Grass</td>
-     <td>None</td>
-     <td>Bayleef</td>
-     <td>Chiko</td>
-     <td>1999-12-14</td>
-    </tr>
-    <tr>
-        <td>155</td>
-        <td>Gen II</td>
-        <td>Cyndaquil</td>
-        <td><img src="https://archives.bulbagarden.net/media/upload/thumb/9/97/0155Cyndaquil.png/250px-0155Cyndaquil.png" alt="Cyndaquil"></td>
-        <td style="background-color: #F08030; color: white;">Fire</td>
-        <td>None</td>
-        <td>Quilava</td>
-        <td>Cyndy</td>
-        <td>1999-12-14</td>
-    </tr>
-    <tr>
-        <td>158</td>
-        <td>Gen II</td>
-        <td>Totodile</td>
-        <td><img src="https://archives.bulbagarden.net/media/upload/thumb/f/f7/0158Totodile.png/250px-0158Totodile.png" alt="Totodile"></td>
-        <td style="background-color: #6890F0; color: white;">Water</td>
-        <td>None</td>
-        <td>Croconaw</td>
-        <td>Toto</td>
-        <td>1999-12-14</td>
-    </tr>
-    <tr>
-        <td>190</td>
-        <td>Gen II</td>
-        <td>Aipom</td>
-        <td><img src="https://archives.bulbagarden.net/media/upload/thumb/0/0d/0190Aipom.png/250px-0190Aipom.png" alt="Aipom"></td>
-        <td style="background-color: #A8A878; color: white;">Normal</td>
-        <td>None</td>
-        <td>Ambipom</td>
-        <td>Ace</td>
-        <td>2000-07-08</td>
-    </tr>
-    <tr>
-        <td>197</td>
-        <td>Gen II</td>
-        <td>Umbreon</td>
-        <td><img src="https://archives.bulbagarden.net/media/upload/e/e1/0197Umbreon.png" alt="Umbreon"></td>
-        <td style="background-color: #705848; color: white;">Dark</td>
-        <td>Eevee</td>
-        <td>None</td>
-        <td>Umby</td>
-        <td>2000-07-08</td>
-    </tr>
-    <tr>
-        <td>211</td>
-        <td>Gen III</td>
-        <td>Treecko</td>
-        <td><img src="https://archives.bulbagarden.net/media/upload/thumb/9/90/0252Treecko.png/250px-0252Treecko.png"></td>
-        <td style="background-color: #78C850; color: white;">Grass</td>
-        <td>None</td>
-        <td>Grovyle</td>
-        <td>Geecko</td>
-        <td>2000-07-08</td>
-    </tr>
-   
-</table>
-
-</body>
-</html>
-
-    .fairy {
-        background-color: #EE99AC;
-        color: white;
-    }
-
-    .flying {
-        background-color: #A890F0;
-        color: white;
-    }
-</style>
-</head>
-<body>
-
-<h2>Pokémon Data Form</h2>
-
-<form action="#">
-    <label for="nationalDex">National Dex:</label><br>
-    <input type="number" id="nationalDex" name="nationalDex" min="0"><br><br>
-
-    <label for="pokemonName">Pokemon Name:</label><br>
-    <input type="text" id="pokemonName" name="pokemonName"><br><br>
-
-    <label>Generation:</label><br>
-    <input type="radio" id="gen1" name="generation" value="1">
-    <label for="gen1">I</label><br>
-    <input type="radio" id="gen2" name="generation" value="2">
-    <label for="gen2">II</label><br>
-    <input type="radio" id="gen3" name="generation" value="3">
-    <label for="gen3">III</label><br><br>
-
-    <label for="image">Image:</label><br>
-    <input type="file" id="image" name="image"><br><br>
-
-    <label for="type1">Type 1:</label><br>
-    <select id="type1" name="type1">
-        <option value="fire" class="fire">Fire</option>
-        <option value="water" class="water">Water</option>
-        <option value="grass" class="grass">Grass</option>
-        <option value="bug" class="bug">Bug</option>
-        <option value="normal" class="normal">Normal</option>
-        <option value="electric" class="electric">Electric</option>
-        <option value="poison" class="poison">Poison</option>
-        <option value="ground" class="ground">Ground</option>
-        <option value="fairy" class="fairy">Fairy</option>
-        <option value="flying" class="flying">Flying</option>
-    </select><br><br>
-
-    <label for="type2">Type 2:</label><br>
-    <select id="type2" name="type2">
-        <option value="" selected>Select Type</option>
-        <option value="fire" class="fire">Fire</option>
-        <option value="water" class="water">Water</option>
-        <option value="grass" class="grass">Grass</option>
-        <option value="bug" class="bug">Bug</option>
-        <option value="normal" class="normal">Normal</option>
-        <option value="electric" class="electric">Electric</option>
-        <option value="poison" class="poison">Poison</option>
-        <option value="ground" class="ground">Ground</option>
-        <option value="fairy" class="fairy">Fairy</option>
-        <option value="flying" class="flying">Flying</option>
-    </select><br><br>
-
-    <label for="evolvesFrom">Evolves From:</label><br>
-    <input type="text" id="evolvesFrom" name="evolvesFrom"><br><br>
-
-    <label for="evolvesTo">Evolves To:</label><br>
-    <input type="text" id="evolvesTo" name="evolvesTo"><br><br>
-
-    <label for="nickname">Nickname:</label><br>
-    <input type="text" id="nickname" name="nickname"><br><br>
-
-    <label for="birthday">Birthday:</label><br>
-    <input type="date" id="birthday" name="birthday"><br><br>
-
-    <input type="submit" value="Submit">
-</form>
-
-<h2>Pokémon Data Table</h2>
-
-<table>
-  <tr>
-    <th>National Dex</th>
-    <th>Pokemon Name</th>
-    <th>Generation</th>
-    <th>Image</th>
-    <th>Type</th>
-    <th>Evolves From</th>
-    <th>Evolves To</th>
-    <th>Nickname</th>
-    <th>Birthday</th>
-  </tr>
-  <tr>
-    <td>001</td>
-    <td>Bulbasaur</td>
-    <td>Gen I</td>
-    <td><img src="https://cdn.bulbagarden.net/upload/2/21/001Bulbasaur.png" alt="Bulbasaur"></td>
-    <td class="grass">Grass/Poison</td>
-    <td>-</td>
-    <td>Ivysaur</td>
-    <td>Bulby</td>
-    <td>1996-02-27</td>
-  </tr>
-  <!-- Add more rows for other Pokémon -->
 </table>
 
 </body>
