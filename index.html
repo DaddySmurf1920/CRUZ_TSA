@@ -32,6 +32,10 @@
         padding: 20px;
         border: 1px solid #dddddd;
     }
+    .fire { color: #FFA500; }
+    .water { color: #4682B4; }
+    .flying { color: #87CEEB; }
+    .psychic { color: #FF69B4; }
 </style>
 </head>
 <body>
@@ -53,27 +57,32 @@
 
     <label for="type1">Type 1:</label>
     <select id="type1" name="type1">
-        <option value="fire">Fire</option>
-        <option value="water">Water</option>
+        <option value="fire" class="fire">Fire</option>
+        <option value="water" class="water">Water</option>
+        <option value="flying" class="flying">Flying</option>
+        <option value="psychic" class="psychic">Psychic</option>
     </select><br><br>
 
     <label for="type2">Type 2:</label>
     <select id="type2" name="type2">
-        <option value="">None</option>
-        <option value="flying">Flying</option>
+        <option value="" selected>None</option>
+        <option value="fire" class="fire">Fire</option>
+        <option value="water" class="water">Water</option>
+        <option value="flying" class="flying">Flying</option>
+        <option value="psychic" class="psychic">Psychic</option>
     </select><br><br>
 
     <label for="evolvesFrom">Evolves From:</label>
-    <input type="text" id="evolvesFrom" name="evolvesFrom"><br><br>
+    <input type="text" id="evolvesFrom" name="evolvesFrom" value="None"><br><br>
 
     <label for="evolvesTo">Evolves To:</label>
     <input type="text" id="evolvesTo" name="evolvesTo" value="Charmeleon"><br><br>
 
     <label for="nickname">Nickname:</label>
-    <input type="text" id="nickname" name="nickname"><br><br>
+    <input type="text" id="nickname" name="nickname" value="None"><br><br>
 
     <label for="birthday">Birthday:</label>
-    <input type="date" id="birthday" name="birthday"><br><br>
+    <input type="date" id="birthday" name="birthday" value="1996-02-27"><br><br>
 
     <input type="submit" value="Submit">
 </form>
@@ -97,7 +106,7 @@
         <td>Gen Z</td>
         <td>Juan Carlos S. Cruz</td>
         <td><img src="Neo.jpg" alt="Juan Carlos S. Cruz"></td>
-        <td>Normal</td>
+        <td class="fire">Fire</td>
         <td>Juan Carlos</td>
         <td>Neo</td>
         <td>Neo</td>
@@ -108,6 +117,7 @@
         <td>Gen II</td>
         <td>Chikorita</td>
         <td><img src="https://archives.bulbagarden.net/media/upload/b/bc/0152Chikorita.png" alt="Chikorita"></td>
+        <td class="water">Water</td>
         <td>None</td>
         <td>Bayleef</td>
         <td>Chiko</td>
@@ -118,6 +128,7 @@
         <td>Gen II</td>
         <td>Cyndaquil</td>
         <td><img src="https://archives.bulbagarden.net/media/upload/thumb/9/97/0155Cyndaquil.png/250px-0155Cyndaquil.png" alt="Cyndaquil"></td>
+        <td class="fire">Fire</td>
         <td>None</td>
         <td>Quilava</td>
         <td>Cyndy</td>
@@ -128,6 +139,7 @@
         <td>Gen II</td>
         <td>Totodile</td>
         <td><img src="https://archives.bulbagarden.net/media/upload/thumb/f/f7/0158Totodile.png/250px-0158Totodile.png" alt="Totodile"></td>
+        <td class="water">Water</td>
         <td>None</td>
         <td>Croconaw</td>
         <td>Toto</td>
@@ -138,6 +150,7 @@
         <td>Gen II</td>
         <td>Umbreon</td>
         <td><img src="https://archives.bulbagarden.net/media/upload/e/e1/0197Umbreon.png" alt="Umbreon"></td>
+        <td class="water">Water</td>
         <td>Eevee</td>
         <td>None</td>
         <td>Umby</td>
@@ -148,6 +161,7 @@
         <td>Gen II</td>
         <td>Aipom</td>
         <td><img src="https://archives.bulbagarden.net/media/upload/thumb/0/0d/0190Aipom.png/250px-0190Aipom.png" alt="Aipom"></td>
+        <td class="flying">Flying</td>
         <td>None</td>
         <td>Ambipom</td>
         <td>Ace</td>
@@ -158,6 +172,7 @@
         <td>Gen III</td>
         <td>Treecko</td>
         <td><img src="https://archives.bulbagarden.net/media/upload/thumb/9/90/0252Treecko.png/250px-0252Treecko.png"></td>
+        <td class="psychic">Psychic</td>
         <td>None</td>
         <td>Grovyle</td>
         <td>Geecko</td>
@@ -168,6 +183,7 @@
         <td>Gen I</td>
         <td>Pikachu</td>
         <td><img src="https://archives.bulbagarden.net/media/upload/thumb/4/4a/0025Pikachu.png/250px-0025Pikachu.png" alt="Pikachu"></td>
+        <td class="electric">Electric</td>
         <td>Pichu</td>
         <td>Raichu</td>
         <td>Pika</td>
@@ -178,6 +194,7 @@
         <td>Gen I</td>
         <td>Clefairy</td>
         <td><img src="https://archives.bulbagarden.net/media/upload/thumb/b/b7/0035Clefairy.png/250px-0035Clefairy.png" alt="Clefairy"></td>
+        <td class="fairy">Fairy</td>
         <td>None</td>
         <td>Clefable</td>
         <td>Moonrock</td>
@@ -188,7 +205,7 @@
         <td>Gen I</td>
         <td>Abra</td>
         <td><img src="https://archives.bulbagarden.net/media/upload/thumb/b/bd/0063Abra.png/250px-0063Abra.png" alt="Abra"></td>
-        <td style="background-color: #F08030; color: white;">Psychic</td>
+        <td class="psychic">Psychic</td>
         <td>None</td>
         <td>Alakazam</td>
         <td>Kadabra</td>
@@ -198,6 +215,5 @@
 
 </body>
 </html>
-
 
 
